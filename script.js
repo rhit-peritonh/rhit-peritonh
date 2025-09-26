@@ -4,9 +4,11 @@ indexbtn.addEventListener('click', () => {
 });
 
 const resumebtn = document.getElementById('resume')
+if (resumebtn) {
 resumebtn.addEventListener('click', () => {
     window.location.href="resume.html"
 });
+}
 
 const portbtn = document.getElementById('portfolio')
 portbtn.addEventListener('click', () => {
