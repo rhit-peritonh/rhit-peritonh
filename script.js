@@ -18,3 +18,21 @@ document.addEventListener('DOMContentLoaded', () => {
         window.location.href = 'portfolio.html';
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = {
+        main: 'index.html',
+        resume: 'resume.html',
+        portfolio: 'portfolio.html'
+    };
+
+    Object.keys(navLinks).forEach(key => {
+        const link = document.querySelector(`.topnav a[href="#${key}"]`);
+        if (link) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault(); // Prevent jumping to #anchor
+                window.location.href = navLinks[key];
+            });
+        }
+    });
+});
