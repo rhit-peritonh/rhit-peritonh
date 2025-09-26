@@ -1,15 +1,15 @@
-const indexbtn = document.getElementById('index')
+const indexbtn = document.querySelector('#index');
 indexbtn.addEventListener('click', () => {
     window.location.href = 'index.html';
 });
 
-const resumebtn = document.getElementById('resume')
+const resumebtn = document.querySelector('#resume');
 resumebtn.addEventListener('click', () => {
     window.location.href="resume.html"
 });
 
 
-const portbtn = document.getElementById('portfolio')
+const portbtn = document.querySelector('#portfolio');
 portbtn.addEventListener('click', () => {
     window.location.href="portfolio.html"
 });
