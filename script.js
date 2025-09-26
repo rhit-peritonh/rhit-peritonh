@@ -1,15 +1,21 @@
-const indexbtn = document.getElementById('index')
-indexbtn.addEventListener('click', () => {
-    window.location.href = 'index.html';
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".topnav a");
 
-const resumebtn = document.getElementById('resume')
-resumebtn.addEventListener('click', () => {
-    window.location.href="resume.html"
-});
+    for (let i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function(e) {
+            e.preventDefault();
 
+            for (let j = 0; j < links.length; j++) {
+                links[j].classList.remove("active");
+            }
 
-const portbtn = document.getElementById('portfolio')
-portbtn.addEventListener('click', () => {
-    window.location.href="portfolio.html"
+            this.classList.add("active");
+
+            const sectionId = this.getAttribute("href").substring(1);
+            const section = document.getElementById(sectionId);
+            if (section) {
+                window.scrollTo(0, section.offsetTop);
+            }
+        });
+    }
 });
