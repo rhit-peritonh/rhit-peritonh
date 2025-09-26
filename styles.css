@@ -15,7 +15,7 @@ body {
 
 .topnav a.active {
     font-weight: bold;
-    color: blue;
+    color: green;
 }
 
 div {
