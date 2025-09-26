@@ -20,14 +20,22 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+    const navLinks = {
+        main: 'index.html',
+        resume: 'resume.html',
+        portfolio: 'portfolio.html'
+    };
+
+    Object.keys(navLinks).forEach(key => {
         const link = document.getElementById(key);
-        link.addEventListener('click', () => {
-            if (key === 'main') window.location.href = 'index.html';
-            else if (key === 'resume') window.location.href = 'resume.html';
-            else if (key === 'portfolio') window.location.href = 'portfolio.html';
-        });
-   
+
+        if (link) {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.location.href = navLinks[key];
+            });
+        }
+    });
 });
 
 document.addEventListener('DOMContentLoaded', () => {
