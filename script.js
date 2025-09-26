@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    const video = document.querySelector('#introVideo');
+    const video = document.querySelector('#remoteCar');
     video.play();
 
     video.addEventListener('click', () => {
