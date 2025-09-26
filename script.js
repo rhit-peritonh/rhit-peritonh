@@ -1,4 +1,4 @@
-const indexbtn = document.querySelector('#index');
+const indexbtn = document.querySelector('#main');
 indexbtn.addEventListener('click', () => {
     window.location.href = 'index.html';
 });
