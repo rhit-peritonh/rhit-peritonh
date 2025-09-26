@@ -30,9 +30,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const link = document.querySelector(`.topnav a[href="#${key}"]`);
         if (link) {
             link.addEventListener('click', (e) => {
-                e.preventDefault(); // Prevent jumping to #anchor
+                e.preventDefault();
                 window.location.href = navLinks[key];
             });
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const video = document.querySelector('#introVideo');
+    video.play();
+
+    video.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+        } else {
+            video.pause();
         }
     });
 });
