@@ -13,5 +13,5 @@ resumebtn.addEventListener('click', () => {
 const portbtn = document.getElementById('portfolio')
 portbtn.addEventListener('click', () => {
     window.location.href="portfolio.html"
-    document.append(portbtn)
+    document.append("portbtn")
 });
