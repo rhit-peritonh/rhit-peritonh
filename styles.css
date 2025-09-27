@@ -63,18 +63,6 @@ a:hover {
 	border-bottom: none;
 }
 
-@media (max-width: 640px) {
-	#main-content {
-		padding: 0 20px;
-	}
-}
-
-@media (print) {
-	#main-content {
-		max-width: none;
-	}
-}
-
 .topnav {
 	background-color: #333;
 	overflow: hidden;
