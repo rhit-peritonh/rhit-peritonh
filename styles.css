@@ -16,14 +16,6 @@
 	font-weight: bold;
 }
 
-#subhead {
-	font-size: 1.5em;
-	margin: 0.83em 0;
-	font-weight: bold;
-}
-
-
-
 .list:before {
 	content: "•";
 	margin: 0 1em 0 -20px;
