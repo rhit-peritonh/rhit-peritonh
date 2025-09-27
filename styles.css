@@ -2,19 +2,7 @@
 	box-sizing: border-box;
 }
 
-#main-content {
-	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: HelveticaNeue, Helvetica, Arial, sans-serif;
-	color: #444;
-}
 
-#headline {
-	font-size: 2em;
-	margin: 0.67em 0;
-	font-weight: bold;
-}
 
 .list:before {
 	content: "•";
